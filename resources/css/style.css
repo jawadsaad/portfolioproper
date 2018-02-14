@@ -1,0 +1,680 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v7/y6oxFxU60dYw9khW6q8jGw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body {
+/*    height: 700vh;*/
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.welcomevid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeoverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 92, 151, 0.1);
+    z-index: 1;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.welcomeoverlay h1 {
+    font-size: 6rem;
+    font-family: 'Monoton';
+    color: white;
+    text-shadow: 0 0 20px black;
+    margin: 2rem 0;
+    text-align: center;
+}
+.welcomeoverlay h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans';
+    color: white;
+    text-shadow: 0 0 50px black;
+    text-align: center;
+}
+
+@media screen and (max-width: 746px) {
+    .welcomeoverlay h1 {
+        font-size: 4rem;
+    }
+    
+    .welcomeoverlay h2 {
+        font-size: 2rem;
+    }
+}
+
+/*********************************************/
+
+.skillset {
+    min-height: 45vh;
+    width: 100%;
+    text-align: center;
+    background-color: #fafafa;
+    color: #7a7a7a;
+/*    color: #8BAD95;*/
+    position: relative;
+    flex-direction: column;
+}
+
+.skillset h1 {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+/*    color: #2199e8;*/
+/*    color: #bababa;*/
+    margin-top: 2rem;
+}
+
+.techicons {
+    margin: 2rem;
+    flex-wrap: wrap;
+    min-height: 8rem;
+}
+
+.devicon {
+    font-size: 5rem;
+/*    color: white;*/
+/*    color: black;*/
+    margin: 1rem 2rem;
+    position: relative;
+    transition: all 200ms ease-out 100ms;
+    cursor: pointer;
+}
+
+.html5:hover {
+    color: #e34f26;
+    font-size: 6rem;
+}
+
+.css3:hover {
+    color: #274fe3;
+    font-size: 6rem;
+}
+
+.javascript:hover {
+    color: #f7df1e;
+    font-size: 6rem;
+}
+
+.bootstrap:hover {
+    color: #6c39b8;
+    font-size: 6rem;
+}
+
+.csharp:hover {
+    color: #5c2e91;
+    font-size: 6rem;
+}
+
+.asp:hover {
+    color: #0772b5;
+    font-size: 6rem;
+}
+
+/*************************************************/
+
+.what-i-can-do {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, #005C97, #363795);
+    color: white;
+    flex-direction: column;
+}
+
+.what-i-can-do h1 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.things-i-do {
+    align-items: flex-start;
+    width: 100%;
+}
+
+.skillbox {
+    min-height: 21rem;
+    width: 23%;
+    margin: 1rem;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 300ms ease-out 100ms;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.skillicon {
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all ease-out 300ms;
+}
+
+.iconhoverbg {
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all ease-out 300ms;
+}
+
+.fa {
+    color: white;
+    font-size: 4rem;
+    transition: all 300ms ease-out 100ms;
+    position: relative;
+}
+
+.fa-mobile {
+    font-size: 6rem;
+}
+
+.skillheader {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Lato';
+    text-align: center;
+    margin: 0rem 1rem;
+    transition: all 300ms ease-out 100ms;
+}
+
+.skilltext {
+    color: white;
+    margin: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.2;
+    transition: all 300ms ease-out 100ms;
+}
+
+.skillbox:hover .iconhoverbg {
+    transform: scale(1);
+}
+
+.skillbox:hover .skillicon {
+    background-color: #005C97;
+}
+
+.skillbox:hover {
+    box-shadow: 0 0 5px black;
+    background-color: #0999AE;
+}
+
+.skillbox:hover .fa {
+    font-size: 3rem;
+    color: #0999AE;
+}
+
+.skillbox:hover .fa-mobile {
+    font-size: 5rem;
+}
+
+.skillbox:hover .skillheader {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1184px) {
+    .skillheader {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1031px) {    
+    .skillbox {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .skillheader {
+        font-size: 1.3rem;
+    }
+    
+    .skillbox {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .things-i-do {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skillbox {
+        width: 90%;
+        min-height: 10rem;
+    }
+}
+
+@media (hover: none) {
+    .what-i-can-do {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .what-i-can-do h1 {
+        padding-top: 0;
+    }
+}
+/************************************************/
+
+.edu-exp {
+    min-height: 105vh;
+    background-image: url(../images/london-2203663_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.eduexpcontent {
+    min-height: 105vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.eduexpcontent h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.eduexpgrid {
+    min-height: 70vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gridbox {
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease-out 100ms;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.eduexph2 {
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    transition: all 300ms ease-out 100ms;
+}
+
+.eduexptext {
+    text-align: center;
+    margin: 1rem 0 0 0;
+    position: relative;
+    right: 15rem;
+    transition: all 300ms ease-out 200ms;
+}
+
+.line2 {
+    transition: all 300ms ease-out 250ms
+}
+
+.eduexptime {
+    text-align: center;
+    margin: 1rem 0 0 0;
+    position: relative;
+    right: 15rem;
+    transition: all 300ms ease-out 300ms;
+}
+
+.gridbox:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px black;
+    transform: scale(1.2);
+}
+
+.gridbox:hover .eduexph2 {
+    top: -2rem;
+}
+
+.gridbox:hover .eduexptext {
+    right: 0;
+}
+
+.gridbox:hover .eduexptime {
+    right: 0;
+}
+
+@media screen and (max-width: 560px) {
+    .gridbox {
+        width: 90%;
+        height: 5rem;
+        pointer-events: none;
+    }
+    
+    .eduexph2, .eduexptime {
+        top: 0;
+        right: 0;
+    }
+    
+    .eduexptext {
+        display: none;
+    }
+}
+
+/*********************************************/
+
+.portfolio {
+    min-height: 100vh;
+    width: 100%;
+/*    background-color: black;*/
+    background-image: radial-gradient(farthest-corner at -40px -40px, #1A2980 0%, #26D0CE 25%, #159957 50%, #155799 75%, #155799 100%);
+/*    background-size: 1400% 1400%;*/
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    overflow: hidden;
+    transition: all 2s ease-out 300ms;
+}
+
+.portfoliobp {
+    background-position: 70% 100%;
+}
+
+.portfoliocontent {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.portfolionav {
+    color: white;
+}
+
+.portfolionav ul li {
+    margin: 2rem 1rem 1rem 1rem;
+    cursor: pointer;
+}
+
+.underline {
+    margin-top: 5px;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: all 300ms ease-out 100ms;
+}
+
+.portfolionav ul li:hover .underline {
+    width: 100%;
+}
+
+.projectcontainer {
+    width: 100%;
+    min-height: 90%;
+    color: white;
+    position: absolute;
+}
+
+.projectcontainer h1 {
+    font-size: 7rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfoliolanding {
+/*    display: none;*/
+    transition: all 300ms ease-out 300ms;
+}
+
+.projectdesc {
+    width: 25%;
+    margin: 2rem;
+    transition: all 300ms ease-out 300ms;
+}
+
+.projectheader {
+    font-size: 2.5rem;
+    font-family: 'Lato';
+    color: white;
+    margin: 2rem 0;
+    transform: translateZ(20px);
+}
+
+.projecttext {
+    font-family: 'Open Sans';
+    color: white;
+    transform: translateZ(20px);
+}
+
+.projectimg {
+    height: 25rem;
+    width: 26rem;
+    margin: 2rem;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0 0 15px black;
+    transform: translateZ(20px);
+    transition: all 300ms ease-out 300ms;
+}
+
+.projectimg img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.project1 {
+    transition: all 300ms ease-out 300ms;
+}
+
+.hideitem {
+    opacity: 0;
+}
+
+.nodisplay {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .projectcontainer {
+        flex-direction: column-reverse;
+    }
+    
+    .portfolionav ul li {
+        margin: 2rem 0.5rem 0.5rem 0.5rem;
+    }
+    
+    .projectcontainer h1 {
+        font-size: 5rem;
+    }
+    
+    .projectdesc {
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .projectheader {
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+    
+    .projecttext {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    
+    .projectimg {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+/******************************************/
+
+.aboutme {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fafafa;
+    background-image: url(../images/pexels-photo-621812.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.aboutmecontent {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.aboutmecontent h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    padding-top: 2rem;
+}
+
+.infoaboutme {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.picplusCV {
+    flex-direction: column;
+}
+
+.self-pic {
+    height: 15rem;
+    width: 11.5rem;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0 0 10px black;
+    margin: 2rem;
+}
+
+.self-pic-img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(90%);
+}
+
+.aboutmetext {
+    width: 50%;
+    margin: 2rem;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 650px) {
+    .infoaboutme {
+        flex-direction: column;
+/*        margin-bottom: 1rem;*/
+    }
+    
+    .aboutmetext {
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+/********************************************/
+
+.contact {
+    min-height: 45vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.contact h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.contactinfo {
+    margin-top: 1rem;
+    min-height: 30%;
+}
+
+.contactdetail {
+    flex-direction: column;
+    cursor: pointer;
+    margin: 1rem 1rem;
+}
+
+.contactdetail .fa {
+    font-size: 6rem;
+}
+
+.contacttext {
+    margin-top: 1rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 529px) {
+    .contactinfo {
+        flex-direction: column;
+    }
+}

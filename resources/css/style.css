@@ -402,10 +402,14 @@ body {
 }
 
 @media screen and (max-width: 560px) {
+    .edu-exp {
+        background-attachment: scroll;
+    }
+  
     .gridbox {
         width: 90%;
         height: 5rem;
-/*         pointer-events: none; */
+        pointer-events: none;
     }
     
     .eduexph2, .eduexptime {
@@ -622,6 +626,10 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    .about me {
+        background-attachment: scroll;
+    }
+  
     .infoaboutme {
         flex-direction: column;
 /*        margin-bottom: 1rem;*/

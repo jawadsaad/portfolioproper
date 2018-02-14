@@ -1,22 +1,23 @@
-var originalBG = $(".portfoliocontent").css("background-color");
+//TEMPORARY EDIT ONLY
+// var originalBG = $(".portfoliocontent").css("background-color");
 
-$('.portfoliocontent:not(".active")')
-.mousemove(function(e) {
+// $('.portfoliocontent:not(".active")')
+// .mousemove(function(e) {
 
-    x  = e.pageX - this.offsetLeft;
-    y  = e.pageY - this.offsetTop;
-    xy = x + " " + y;
+//     x  = e.pageX - this.offsetLeft;
+//     y  = e.pageY - this.offsetTop;
+//     xy = x + " " + y;
 
-    bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", 50, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.0))), " + originalBG;
-//    bgMoz    = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, rgba(255,255,255,1)" + " 0%, " + originalBG + " " + 10 + "px)";
+//     bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", 50, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.0))), " + originalBG;
+// //    bgMoz    = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, rgba(255,255,255,1)" + " 0%, " + originalBG + " " + 10 + "px)";
 
-    $(this)
-      .css({ background: bgWebKit });
-//      .css({ background: bgMoz });
+//     $(this)
+//       .css({ background: bgWebKit });
+// //      .css({ background: bgMoz });
 
-}).mouseleave(function() {
-        $(this).css({ background: originalBG });
-});
+// }).mouseleave(function() {
+//         $(this).css({ background: originalBG });
+// });
 
 //PORTFOLIO
 var portfolio = document.getElementById('portfolio');

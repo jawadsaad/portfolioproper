@@ -405,7 +405,7 @@ body {
     .gridbox {
         width: 90%;
         height: 5rem;
-        pointer-events: none;
+/*         pointer-events: none; */
     }
     
     .eduexph2, .eduexptime {

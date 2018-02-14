@@ -626,7 +626,7 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-    .about me {
+    .aboutme {
         background-attachment: scroll;
     }
   

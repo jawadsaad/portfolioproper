@@ -319,7 +319,7 @@ body {
     min-height: 105vh;
     background-image: url(../images/london-2203663_1920.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     position: relative;
 }
@@ -576,7 +576,7 @@ body {
     width: 100%;
     background-color: #fafafa;
     background-image: url(../images/pexels-photo-621812.jpeg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }

@@ -401,10 +401,16 @@ body {
     right: 0;
 }
 
-@media screen and (max-width: 560px) {
+@media (hover: none) {
     .edu-exp {
         background-attachment: scroll;
     }
+}
+
+@media screen and (max-width: 560px) {
+/*     .edu-exp {
+        background-attachment: scroll;
+    } */
   
     .gridbox {
         width: 90%;
@@ -625,10 +631,16 @@ body {
     line-height: 1.2;
 }
 
-@media screen and (max-width: 650px) {
+@media (hover: none) {
     .aboutme {
         background-attachment: scroll;
     }
+}
+
+@media screen and (max-width: 650px) {
+/*     .aboutme {
+        background-attachment: scroll;
+    } */
   
     .infoaboutme {
         flex-direction: column;

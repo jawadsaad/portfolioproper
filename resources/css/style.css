@@ -130,6 +130,11 @@ body {
     cursor: pointer;
 }
 
+.aspnet {
+    font-weight: bold;
+    display: block;
+}
+
 .html5:hover {
     color: #e34f26;
     font-size: 6rem;
@@ -158,6 +163,10 @@ body {
 .asp:hover {
     color: #0772b5;
     font-size: 6rem;
+}
+
+.asp:hover .aspnet {
+    color: #0772b5;
 }
 
 /*************************************************/

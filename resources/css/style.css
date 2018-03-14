@@ -164,7 +164,7 @@ body {
     color: #0772b5;
 }
 
-.asp:hover {
+.asp-net:hover .asp {
     color: #0772b5;
     font-size: 6rem;
 }

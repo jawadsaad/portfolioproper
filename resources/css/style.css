@@ -127,12 +127,12 @@ body {
     margin: 1rem 2rem;
     position: relative;
     transition: all 200ms ease-out 100ms;
-    cursor: pointer;
 }
 
 .aspnet {
     font-weight: bold;
     display: block;
+    transition: all 200ms ease-out 100ms;
 }
 
 .html5:hover {
@@ -199,7 +199,6 @@ body {
     flex-direction: column;
     border-radius: 10px;
     transition: all 300ms ease-out 100ms;
-    cursor: pointer;
     justify-content: flex-start;
 }
 

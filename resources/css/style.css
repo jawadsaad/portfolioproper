@@ -160,13 +160,13 @@ body {
     font-size: 6rem;
 }
 
+.asp-net:hover .aspnet {
+    color: #0772b5;
+}
+
 .asp:hover {
     color: #0772b5;
     font-size: 6rem;
-}
-
-.asp:hover .aspnet {
-    color: #0772b5;
 }
 
 /*************************************************/
